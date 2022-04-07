@@ -5,16 +5,17 @@ Created on Wed Apr  6 20:00:56 2022
 
 @author: sauravkumar
 """
-
+#https://classroom.google.com/u/2/c/NDUwOTk2NDQxODQz/m/NDUwOTk2NDQxODYw/details
+#Q1-6
 import nltk
 nltk.download('punkt')
 
 from nltk.tokenize import word_tokenize, sent_tokenize
 
-text = "Assessment consists of two class tests of 20 marks each. The first class test is to be conductedwhen approx. 40% syllabus is completed and second class test when additional 40% syllabus iscompleted. Duration of each test shall be one hour"
+text = open("New Text Document.txt").read()
 
 print('Word tokenize', word_tokenize(text))
-print(sent_tokenize(text))
+#print(sent_tokenize(text))
 
 #lower case
 print(text.lower())
