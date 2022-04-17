@@ -44,8 +44,7 @@ print('Removing punctuation', remove_punctuation(text1))
 #removing white spaces
 
 def remove_space(text1):
-    text1 = re.sub(r'[ ]', '', text1)
-    return text1
+    return	" ".join(text.split())
 text1 = "Hey, did you know that the summer break is coming? Amazing right !! It's only 5 more days !"
 print('Removing white space', remove_space(text1))    
 
